@@ -21,7 +21,7 @@ function AddTasks({ tasks, setTasks }) {
   };
 
   return (
-    <div className="bg-slate-700 border border-gray-500 rounded-lg shadow-lg p-4 my-6">
+    <div className="bg-slate-700 border border-gray-500 rounded-lg shadow-lg p-4 my-4">
       <h2 className="text-xl font-bold text-white mb-4 text-center">
         Nova Tarefa
       </h2>
