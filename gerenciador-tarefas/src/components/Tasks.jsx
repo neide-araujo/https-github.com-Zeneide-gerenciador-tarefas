@@ -1,3 +1,6 @@
+// components/Tasks.jsx
+import { Link } from "react-router-dom";
+
 function Tasks({ tasks, setTasks }) {
   const toggleTask = (id) => {
     setTasks(
@@ -26,7 +29,13 @@ function Tasks({ tasks, setTasks }) {
                   : "text-black font-semibold"
               }
             >
-              {task.title}
+              {/* Título da tarefa vira um link para a página de detalhes */}
+              <Link
+                to={`/tasks/${task.id}`}
+                className="text-blue-600 hover:text-blue-800 no-underline"
+              >
+                {task.title}
+              </Link>
             </h2>
             <p className="text-gray-800">{task.description}</p>
           </div>
